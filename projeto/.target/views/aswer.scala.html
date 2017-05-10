@@ -1,0 +1,16 @@
+@(messages: List[String])
+
+@main("QUAL A SUA PERGUNTA?") {
+
+
+<form method="post"> 
+	<input type="text" name="question" size="100px">
+	<input type="submit" value="Enviar"/>
+</form>
+
+<ul>
+   @for( m <- messages ){
+  		<li>@m</li>
+  }
+</ul>
+}
